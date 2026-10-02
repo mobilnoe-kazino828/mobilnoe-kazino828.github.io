@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mobilnoe-kazino828.github.io/sitemap.xml

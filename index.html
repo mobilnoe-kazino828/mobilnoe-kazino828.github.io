@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Мобильное казино 2026 — разбор условий: приложение, браузер и касса с телефона</title>
+<meta name="description" content="Условия игры с телефона в 2026: чем PWA отличается от APK и Telegram Mini App, как сверить подпись файла, что умеет Safari на iPhone, касса по СБП, трафик лайв-стола и вход по Face ID.">
+<link rel="canonical" href="https://mobilnoe-kazino828.github.io/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Мобильное казино 2026: условия игры с телефона по пунктам">
+<meta property="og:description" content="PWA против APK против Mini App, подпись файла, iPhone и Safari, касса по СБП в мобильной версии, трафик лайва и Face ID — что написано в правилах и что это значит для игрока.">
+<meta property="og:url" content="https://mobilnoe-kazino828.github.io/">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400..700&family=Golos+Text:wght@400..700&display=swap">
+<style>
+:root{
+  --sheet:#f4eee3;--card:#fcf8f0;--card-2:#ebe4d6;--ink:#211c17;--ink-mid:#5a5146;--ink-dim:#7a7064;
+  --rule:#d8d0c1;--rule-strong:#b3a894;
+  --copper:#8c461a;--copper-ink:#7a3b14;--copper-wash:#f1dfcf;--on-copper:#fff7ef;
+  --ok:#2f6f5e;--ok-wash:#dcebe4;--no:#9a3327;--no-wash:#f2dcd8;--half:#8c6a1d;--half-wash:#efe5cc;
+  --bar-a:#8c461a;--bar-b:#2b6cb8;--bar-c:#1f8f6c;--bar-d:#c4552d;--bar-e:#5b4aa0;
+  --serif:"Literata","Iowan Old Style","PT Serif",Georgia,serif;
+  --sans:"Golos Text","Segoe UI",Roboto,system-ui,sans-serif;
+  --t-h1:clamp(2rem,1.3rem + 2.6vw,3rem);--t-h2:clamp(1.4rem,1.15rem + 1vw,1.75rem);--t-h3:1.125rem;
+  --t-lead:clamp(1.05rem,1rem + .35vw,1.15rem);--t-body:1.0625rem;--t-ui:.9375rem;--t-small:.875rem;--t-tiny:.78rem;
+  --pad:clamp(16px,4vw,28px);--gap-section:clamp(44px,7vw,84px);
+  --col-text:700px;--col-wide:1080px;
+  --rad-s:4px;--rad-m:8px;--rad-l:12px;
+  --shade-1:0 1px 2px rgba(33,28,23,.07);--shade-2:0 6px 18px -8px rgba(33,28,23,.22);
+  --ease:cubic-bezier(.2,.9,.3,1);--tick:140ms;--beat:240ms;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --sheet:#171411;--card:#1f1b17;--card-2:#28231d;--ink:#eae3d6;--ink-mid:#b3a897;--ink-dim:#8d8374;
+  --rule:#352e27;--rule-strong:#4f463b;
+  --copper:#d78b5c;--copper-ink:#e39a6e;--copper-wash:#3b2a1e;--on-copper:#1c120c;
+  --ok:#73bca3;--ok-wash:#1f332c;--no:#e07d70;--no-wash:#3b211d;--half:#d4a743;--half-wash:#362d18;
+  --bar-a:#d78b5c;--bar-b:#4a8ee0;--bar-c:#2aa57e;--bar-d:#e0683d;--bar-e:#978ae6;
+  --shade-1:0 1px 2px rgba(0,0,0,.5);--shade-2:0 8px 22px -10px rgba(0,0,0,.7);
+  color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --sheet:#171411;--card:#1f1b17;--card-2:#28231d;--ink:#eae3d6;--ink-mid:#b3a897;--ink-dim:#8d8374;
+  --rule:#352e27;--rule-strong:#4f463b;
+  --copper:#d78b5c;--copper-ink:#e39a6e;--copper-wash:#3b2a1e;--on-copper:#1c120c;
+  --ok:#73bca3;--ok-wash:#1f332c;--no:#e07d70;--no-wash:#3b211d;--half:#d4a743;--half-wash:#362d18;
+  --bar-a:#d78b5c;--bar-b:#4a8ee0;--bar-c:#2aa57e;--bar-d:#e0683d;--bar-e:#978ae6;
+  --shade-1:0 1px 2px rgba(0,0,0,.5);--shade-2:0 8px 22px -10px rgba(0,0,0,.7);
+  color-scheme:dark;}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition-duration:1ms!important;animation-duration:1ms!important}}
+body{margin:0;background:var(--sheet);color:var(--ink);font:400 var(--t-body)/1.62 var(--sans);-webkit-font-smoothing:antialiased;hyphens:auto}
+h1,h2,h3{font-family:var(--serif);margin:0;text-wrap:balance}
+h1{font-size:var(--t-h1);line-height:1.08;font-weight:600;letter-spacing:-.01em;font-variation-settings:"opsz" 56}
+h2{font-size:var(--t-h2);line-height:1.2;font-weight:600;font-variation-settings:"opsz" 32}
+h3{font-size:var(--t-h3);line-height:1.3;font-weight:600;font-variation-settings:"opsz" 18;margin:28px 0 8px}
+p{margin:0 0 14px;text-wrap:pretty}
+a{color:var(--copper-ink);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--copper);outline-offset:3px}
+::selection{background:var(--copper-wash)}
+.tnum{font-variant-numeric:tabular-nums}
+.column{max-width:var(--col-text);margin-inline:auto;padding-inline:var(--pad)}
+.broad{max-width:var(--col-wide);margin-inline:auto;padding-inline:var(--pad)}
+.dim{color:var(--ink-dim)}.mid{color:var(--ink-mid)}
+.small{font-size:var(--t-small);line-height:1.5}
+
+/* masthead */
+.masthead{border-bottom:1px solid var(--rule);background:var(--sheet);position:sticky;top:0;z-index:30}
+.masthead .broad{display:flex;align-items:center;gap:20px;min-height:58px}
+.brand{font-family:var(--serif);font-weight:600;font-size:17px;color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;gap:9px;white-space:nowrap}
+.brand svg{width:22px;height:22px}
+.rail{margin-left:auto;display:flex;gap:18px;overflow-x:auto;scrollbar-width:none;font-size:14px;white-space:nowrap;padding-block:6px;
+  mask-image:linear-gradient(90deg,transparent,#000 14px,#000 calc(100% - 14px),transparent)}
+.rail::-webkit-scrollbar{display:none}
+.rail a{color:var(--ink-mid);text-decoration:none;padding-block:2px;border-bottom:2px solid transparent;transition:color var(--tick) var(--ease),border-color var(--tick) var(--ease)}
+.rail a:hover,.rail a[aria-current="true"]{color:var(--ink);border-bottom-color:var(--copper)}
+.mode{flex:none;border:1px solid var(--rule-strong);background:var(--card);color:var(--ink-mid);font:500 13px/1 var(--sans);padding:7px 10px;border-radius:var(--rad-s);cursor:pointer}
+.mode:hover{color:var(--ink);border-color:var(--ink)}
+
+/* opener */
+.opener{padding-block:48px 36px}
+.opener .broad{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(260px,1fr);gap:40px;align-items:start}
+@media (max-width:860px){.opener .broad{grid-template-columns:1fr;gap:28px}}
+.dateline{font-size:var(--t-small);color:var(--ink-dim);margin-bottom:10px}
+.opener h1{margin-bottom:16px}
+.deck{font-size:var(--t-lead);line-height:1.5;color:var(--ink-mid);max-inline-size:60ch}
+.terms-strip{background:var(--card);border:1px solid var(--rule-strong);border-radius:var(--rad-l);padding:22px 24px;box-shadow:var(--shade-2)}
+.terms-strip h2{font-size:15px;font-family:var(--sans);font-weight:600;color:var(--ink-dim);margin-bottom:14px;font-variation-settings:normal}
+.terms-strip dl{margin:0;display:grid;gap:12px}
+.terms-strip dt{font-size:var(--t-tiny);color:var(--ink-dim);letter-spacing:.01em}
+.terms-strip dd{margin:2px 0 0;font-weight:600;font-size:var(--t-ui);line-height:1.4}
+.terms-strip dd span{font-weight:400;color:var(--ink-mid)}
+.toc{margin:28px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px 16px;font-size:var(--t-small)}
+.toc a{color:var(--ink-mid);text-decoration:none}
+.toc a:hover{color:var(--copper-ink);text-decoration:underline}
+.toc li::before{content:counter(toc,upper-roman) " ";counter-increment:toc;color:var(--copper);font-family:var(--serif);font-weight:600}
+.toc{counter-reset:toc}
+
+/* clauses */
+main{counter-reset:clause}
+.clause{padding-block:var(--gap-section);border-top:1px solid var(--rule);scroll-margin-top:70px}
+.clause-head{display:flex;align-items:baseline;gap:14px;margin-bottom:18px}
+.clause-head::before{content:counter(clause,upper-roman);counter-increment:clause;font-family:var(--serif);font-weight:500;font-size:1.1rem;color:var(--copper);min-width:2ch}
+.clause .verdict{font-size:var(--t-body);padding:14px 18px;border-left:0;background:var(--card);border:1px solid var(--rule);border-radius:var(--rad-m);margin-bottom:22px}
+.clause .verdict strong{font-weight:600}
+.text{max-inline-size:68ch}
+.text ul{padding-left:1.2em;margin:0 0 14px}
+.text li{margin-bottom:6px}
+
+/* tables */
+.pane{border:1px solid var(--rule);border-radius:var(--rad-m);overflow-x:auto;background:var(--card);margin:18px 0 22px}
+table{border-collapse:collapse;width:100%;font-size:var(--t-ui);line-height:1.4}
+caption{caption-side:top;text-align:left;padding:12px 14px 8px;font-size:var(--t-small);color:var(--ink-dim)}
+th,td{padding:10px 14px;text-align:left;vertical-align:top;border-top:1px solid var(--rule)}
+thead th{border-top:0;border-bottom:2px solid var(--rule-strong);font-size:13px;font-weight:600;color:var(--ink-mid);white-space:nowrap}
+tbody th{font-weight:600;white-space:nowrap}
+.matrix{min-width:720px}
+.matrix td{white-space:normal}
+.state{display:inline-flex;align-items:center;gap:6px;font-size:var(--t-small);font-weight:500;padding:2px 8px;border-radius:var(--rad-s)}
+.state.ok{background:var(--ok-wash);color:var(--ok)}
+.state.no{background:var(--no-wash);color:var(--no)}
+.state.half{background:var(--half-wash);color:var(--half)}
+
+/* charts */
+.chart{margin:22px 0 26px;background:var(--card);border:1px solid var(--rule);border-radius:var(--rad-l);padding:18px 18px 10px}
+.chart svg{display:block;width:100%;height:auto;font-family:var(--sans)}
+.chart figcaption{font-size:var(--t-small);color:var(--ink-dim);padding:10px 2px 6px;line-height:1.5}
+.chart .pane{margin:10px 0 6px;background:var(--sheet)}
+.chart text{fill:var(--ink)}
+.chart .axis{fill:var(--ink-dim);font-size:12px}
+.chart .lbl{font-size:13px}
+.chart .val{font-size:13px;font-weight:600}
+.chart .grid{stroke:var(--rule);stroke-width:1}
+.chart .base{stroke:var(--rule-strong);stroke-width:1}
+
+/* steps */
+.check-steps{list-style:none;padding:0;margin:18px 0 22px;display:grid;gap:10px}
+.check-steps li{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start;background:var(--card);border:1px solid var(--rule);border-radius:var(--rad-m);padding:12px 14px}
+.check-steps li::before{content:counter(step);counter-increment:step;display:grid;place-items:center;width:30px;height:30px;border-radius:var(--rad-s);background:var(--copper);color:var(--on-copper);font:600 14px/1 var(--serif)}
+.check-steps{counter-reset:step}
+.check-steps b{font-weight:600}
+
+/* red flags */
+.flag-list{list-style:none;padding:0;margin:18px 0 22px;display:grid;gap:8px}
+.flag-list li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;padding:10px 12px;border:1px solid var(--rule);border-radius:var(--rad-m);background:var(--card)}
+.flag-list svg{width:18px;height:18px;margin-top:3px}
+.flag-list .stop svg{stroke:var(--no)}
+.flag-list .fine svg{stroke:var(--ok)}
+
+/* qa */
+.qa{border:1px solid var(--rule);border-radius:var(--rad-m);background:var(--card);margin-bottom:10px}
+.qa summary{cursor:pointer;list-style:none;padding:14px 16px;font-weight:600;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";font-family:var(--serif);font-size:22px;line-height:1;color:var(--copper);flex:none;transition:transform var(--beat) var(--ease)}
+.qa[open] summary::after{transform:rotate(45deg)}
+.qa-body{padding:0 16px 14px;color:var(--ink-mid)}
+.qa-body p{margin:0}
+
+/* channel + care + colophon */
+.channel{background:var(--card);border:1px solid var(--rule-strong);border-radius:var(--rad-l);padding:24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+@media (max-width:640px){.channel{grid-template-columns:1fr}}
+.channel p{margin:0}
+.go{display:inline-block;background:var(--copper);color:var(--on-copper);text-decoration:none;font-weight:600;padding:12px 18px;border-radius:var(--rad-m);white-space:nowrap;transition:background-color var(--tick) var(--ease)}
+.go:hover{background:var(--copper-ink);text-decoration:none}
+.care{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border:1px dashed var(--rule-strong);border-radius:var(--rad-m);font-size:var(--t-small);color:var(--ink-mid)}
+.care b{display:grid;place-items:center;flex:none;width:36px;height:36px;border:2px solid var(--ink);border-radius:50%;font-size:12px;color:var(--ink)}
+.colophon{border-top:1px solid var(--rule);padding-block:28px 40px;font-size:var(--t-small);color:var(--ink-dim)}
+.colophon .broad{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media (max-width:720px){.colophon .broad{grid-template-columns:1fr}}
+.colophon p{margin-bottom:6px}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","@id":"https://mobilnoe-kazino828.github.io/#page","headline":"Мобильное казино 2026: условия игры с телефона — PWA, APK, Mini App и касса по СБП","description":"Условия игры с телефона в 2026: чем PWA отличается от APK и Telegram Mini App, как сверить подпись файла, что умеет Safari на iPhone, касса по СБП, трафик лайв-стола и вход по Face ID.","inLanguage":"ru","datePublished":"2026-10-01","dateModified":"2026-10-01","author":{"@type":"Organization","name":"Редакция «Вертикальный экран»"},"publisher":{"@type":"Organization","name":"Вертикальный экран"},"mainEntityOfPage":"https://mobilnoe-kazino828.github.io/"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","@id":"https://mobilnoe-kazino828.github.io/#faq","mainEntity":[
+{"@type":"Question","name":"Нужно ли скачивать приложение, чтобы играть с телефона?","acceptedAnswer":{"@type":"Answer","text":"Нет. Слоты на HTML5 и лайв-столы на WebRTC открываются в Chrome и Safari без установки, а ярлык на экран (PWA) даёт полноэкранный режим. Отдельный APK нужен только ради push-уведомлений и биометрии через системный API, и ставить его стоит лишь с домена оператора после сверки отпечатка сертификата."}},
+{"@type":"Question","name":"Почему приложения нет в Google Play и App Store?","acceptedAnswer":{"@type":"Answer","text":"Google Play допускает приложения с игрой на деньги только в странах из своего списка и только при местной лицензии; России в списке нет. App Store по правилу 5.3.4 требует нативную сборку и лицензию на территорию, где приложение доступно. Отсюда два законных пути на телефон: браузер с ярлыком и Telegram Mini App, а на Android ещё APK с сайта оператора."}},
+{"@type":"Question","name":"Как понять, что APK не подменили?","acceptedAnswer":{"@type":"Answer","text":"Сверить SHA-256 отпечаток сертификата подписи с тем, что опубликован на сайте оператора, и проверить имя пакета. Отпечаток показывают apksigner verify --print-certs на компьютере или приложения-анализаторы на телефоне. Файл из мессенджера, с файлообменника или с «зеркала» без отпечатка ставить нельзя."}},
+{"@type":"Question","name":"Можно ли внести депозит по СБП прямо с телефона, если QR показан на том же экране?","acceptedAnswer":{"@type":"Answer","text":"Да, если касса даёт ссылку вида qr.nspk.ru или кнопку «Открыть в приложении банка»: по ней телефон сам предложит список банков. Если показан только QR, его можно сохранить скриншотом и открыть в банковском приложении через «сканировать из галереи». Перевод по СБП безотзывный, поэтому имя получателя сверяют до подтверждения."}},
+{"@type":"Question","name":"Сколько трафика съедает лайв-стол за час?","acceptedAnswer":{"@type":"Answer","text":"При битрейте 2,5 Мбит/с (720p) выходит около 1,1 ГБ в час, при 5 Мбит/с (1080p) — около 2,2 ГБ, при 1,5 Мбит/с (480p) — около 0,66 ГБ. Слот на HTML5 после загрузки тратит порядка 0,09 ГБ в час. Два стола в режиме multi-view удваивают расход."}},
+{"@type":"Question","name":"Защищает ли Face ID счёт, если телефон украли разблокированным?","acceptedAnswer":{"@type":"Answer","text":"Не защищает: биометрия подтверждает только вход, а открытая сессия уже внутри. Поэтому в правилах кассы отдельно просят код или подтверждение на вывод, а в настройках аккаунта стоит включить TOTP-коды и выход из всех устройств. Сам слепок лица оператору не передаётся — он остаётся в Secure Enclave или TEE телефона."}}
+]}
+</script>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="broad">
+    <a class="brand" href="#top" aria-label="Вертикальный экран — к началу">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="13" r="3" fill="var(--copper)"/></svg>
+      Вертикальный экран
+    </a>
+    <nav class="rail" aria-label="Разделы">
+      <a href="#formats">Форматы</a>
+      <a href="#apk">Подпись APK</a>
+      <a href="#ios">iPhone</a>
+      <a href="#sbp">Касса по СБП</a>
+      <a href="#traffic">Трафик лайва</a>
+      <a href="#faceid">Face ID</a>
+      <a href="#rules">Пункты правил</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <button class="mode" type="button" data-mode-toggle aria-label="Переключить тему">Тема</button>
+  </div>
+</header>
+
+<section class="opener" id="top">
+  <div class="broad">
+    <div>
+      <p class="dateline tnum">Обновлено 1 октября 2026 · Москва · редакция «Вертикальный экран»</p>
+      <h1>Мобильное казино 2026: условия игры с телефона — PWA, APK, Mini App и касса по СБП</h1>
+      <p class="deck">Разбираем пункты правил, которые касаются телефона: в каком формате казино отдаёт игру на андроид и айфон, как сверить подпись установочного файла, что ограничивает Safari, как устроена касса по СБП в мобильной версии, сколько трафика уходит на лайв-стол и что на самом деле защищает вход по Face ID. Без партнёрских ссылок и без названий операторов: только условия и их последствия.</p>
+      <ol class="toc" aria-label="Содержание">
+        <li><a href="#formats">Четыре формата доступа</a></li>
+        <li><a href="#apk">Подпись APK</a></li>
+        <li><a href="#ios">iPhone и Safari</a></li>
+        <li><a href="#sbp">Касса по СБП</a></li>
+        <li><a href="#traffic">Трафик лайв-стола</a></li>
+        <li><a href="#faceid">Face ID и вход</a></li>
+        <li><a href="#rules">Пункты правил про телефон</a></li>
+      </ol>
+    </div>
+    <aside class="terms-strip" aria-label="Условия в одну строку">
+      <h2>Условия в одну строку</h2>
+      <dl>
+        <div><dt>Установка</dt><dd>Не обязательна <span>— слоты и лайв идут в браузере</span></dd></div>
+        <div><dt>APK на Android</dt><dd>Только с домена оператора <span>— сверка SHA-256 отпечатка</span></dd></div>
+        <div><dt>iPhone</dt><dd>Safari и ярлык на экран <span>— в App Store сборок нет</span></dd></div>
+        <div><dt>Депозит с телефона</dt><dd>СБП по ссылке в банк <span>— перевод безотзывный</span></dd></div>
+        <div><dt>Лайв-стол 720p</dt><dd class="tnum">≈ 1,1 ГБ в час <span>— на LTE считать трафик</span></dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<main>
+
+<section class="clause" id="formats">
+  <div class="column">
+    <div class="clause-head"><h2>Мобильное казино в браузере, PWA, APK и Telegram Mini App: четыре способа открыть стол</h2></div>
+    <p class="verdict"><strong>Для игрока из России доступны четыре формата, и три из них не требуют установки.</strong> Мобильная версия сайта в Chrome или Safari покрывает слоты на HTML5 и лайв-столы; ярлык на экран превращает её в PWA; Telegram Mini App запускается внутри мессенджера; APK остаётся единственным форматом, который ставится как файл и требует проверки подписи.</p>
+    <div class="text">
+      <p>Разница между форматами лежит в двух плоскостях: кто обновляет код и кто отвечает за его подлинность. В браузере и в PWA оператор обновляет сайт на сервере, а Web App Manifest и service worker только кэшируют оболочку — игрок получает свежую версию при следующем открытии, без магазина и без действий. В Telegram Mini App код тоже приходит с сервера оператора, а мессенджер даёт обёртку, авторизацию по аккаунту и оплату через Telegram Stars или кошелёк TON, если оператор их подключил. APK живёт на телефоне как файл: обновления приходят через встроенный апдейтер оператора, и каждая новая сборка должна быть подписана тем же ключом.</p>
+      <p>Почему именно так, а не через магазины, объясняют правила площадок. Google Play разрешает приложения с игрой на деньги только в перечисленных странах и только при наличии местной лицензии; России в этом перечне нет. App Store по пункту 5.3.4 требует нативную сборку, лицензию на каждую территорию и бесплатное распространение. Для российского аккаунта это означает отсутствие легального способа выложить сборку в магазин, и операторы распределяют нагрузку между мобильной версией, PWA, Mini App и прямым APK.</p>
+    </div>
+    <div class="pane">
+      <table class="matrix">
+        <caption>Что меняется для игрока в зависимости от формата (общие свойства платформ, 2026)</caption>
+        <thead><tr><th scope="col">Условие</th><th scope="col">Браузер / PWA</th><th scope="col">APK с сайта</th><th scope="col">Telegram Mini App</th><th scope="col">iPhone, Safari</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Установка файла</th><td><span class="state ok">нет</span></td><td><span class="state no">да, с «неизвестных источников»</span></td><td><span class="state ok">нет</span></td><td><span class="state ok">нет</span></td></tr>
+          <tr><th scope="row">Обновления</th><td><span class="state ok">с сервера, сами</span></td><td><span class="state half">через апдейтер оператора</span></td><td><span class="state ok">с сервера, сами</span></td><td><span class="state ok">с сервера, сами</span></td></tr>
+          <tr><th scope="row">Push-уведомления</th><td><span class="state half">Android — да; iOS с 16.4 при ярлыке</span></td><td><span class="state ok">системные</span></td><td><span class="state half">через бота</span></td><td><span class="state half">только с ярлыка</span></td></tr>
+          <tr><th scope="row">Биометрия входа</th><td><span class="state half">passkey / WebAuthn</span></td><td><span class="state ok">BiometricPrompt</span></td><td><span class="state half">код-пароль Telegram</span></td><td><span class="state half">passkey через Face ID</span></td></tr>
+          <tr><th scope="row">Проверка подписи</th><td><span class="state ok">не нужна</span></td><td><span class="state no">обязательна</span></td><td><span class="state ok">не нужна</span></td><td><span class="state ok">не нужна</span></td></tr>
+          <tr><th scope="row">Лайв-стол</th><td><span class="state ok">WebRTC в браузере</span></td><td><span class="state ok">WebRTC в WebView</span></td><td><span class="state ok">WebRTC в WebView</span></td><td><span class="state ok">WebRTC в WebKit</span></td></tr>
+          <tr><th scope="row">Касса по СБП</th><td><span class="state ok">ссылка в банк</span></td><td><span class="state ok">ссылка в банк</span></td><td><span class="state half">зависит от оператора</span></td><td><span class="state ok">ссылка в банк</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text">
+      <p>Практический вывод из таблицы: если оператор настаивает на APK как единственном варианте, это условие, а не удобство — ему нужны push-уведомления, системная биометрия и устойчивость к блокировкам домена. Игроку в обмен достаётся обязанность сверять подпись каждого обновления. Если же в правилах написано «игра доступна в браузере», ярлык на экран закрывает те же задачи без установки, а Mini App добавляет вход по аккаунту Telegram, который и так защищён кодом-паролем мессенджера.</p>
+      <p>Отдельный пункт правил казино на телефон — одно устройство на аккаунт. Операторы снимают отпечаток устройства (device fingerprint): модель, разрешение, список шрифтов, идентификатор WebView. Переход с браузера на APK и обратно на одном смартфоне трактуется как одно устройство; вход с двух телефонов под одним аккаунтом в большинстве правил допустим, а два аккаунта с одного устройства — основание для блокировки по пункту о мультиаккаунтинге.</p>
+    </div>
+    <details class="qa" id="q-install">
+      <summary>Нужно ли скачивать приложение, чтобы играть с телефона?</summary>
+      <div class="qa-body"><p>Нет. Слоты на HTML5 и лайв-столы на WebRTC открываются в Chrome и Safari без установки, а ярлык на экран (PWA) даёт полноэкранный режим. Отдельный APK нужен только ради push-уведомлений и биометрии через системный API, и ставить его стоит лишь с домена оператора после сверки отпечатка сертификата.</p></div>
+    </details>
+    <details class="qa" id="q-stores">
+      <summary>Почему приложения нет в Google Play и App Store?</summary>
+      <div class="qa-body"><p>Google Play допускает приложения с игрой на деньги только в странах из своего списка и только при местной лицензии; России в списке нет. App Store по правилу 5.3.4 требует нативную сборку и лицензию на территорию, где приложение доступно. Отсюда два законных пути на телефон: браузер с ярлыком и Telegram Mini App, а на Android ещё APK с сайта оператора.</p></div>
+    </details>
+  </div>
+</section>
+
+<section class="clause" id="apk">
+  <div class="column">
+    <div class="clause-head"><h2>Подпись APK: отпечаток сертификата, имя пакета и разрешения</h2></div>
+    <p class="verdict"><strong>Подлинность APK подтверждает один признак — отпечаток сертификата подписи, совпадающий с опубликованным на сайте оператора.</strong> Название файла, иконка и даже рабочий вход в аккаунт ничего не доказывают: подменённая сборка открывает тот же сайт в WebView и перехватывает ввод.</p>
+    <div class="text">
+      <p>Android требует, чтобы каждый APK был подписан. С Android 7 действует схема подписи v2, с Android 9 — v3 с ротацией ключей, и система отказывается обновлять приложение, если новая версия подписана другим ключом. Это свойство работает на игрока: обновление с иной подписью не встанет поверх старого, и телефон покажет ошибку «пакет конфликтует с существующим». Проблема возникает на первой установке — тогда сравнивать не с чем, кроме отпечатка, который оператор обязан публиковать рядом со ссылкой на файл.</p>
+      <p>Отпечаток — это SHA-256 от сертификата подписи, строка из 32 байт в шестнадцатеричной записи. На компьютере его показывает <code>apksigner verify --print-certs файл.apk</code> из Android SDK Build-Tools; на смартфоне — анализаторы пакетов, которые читают подпись без установки. Вторая проверка — имя пакета (package name), например вида <code>com.оператор.app</code>: оно уникально для установленных приложений и должно совпадать с указанным в правилах. Третья — список разрешений в манифесте.</p>
+    </div>
+    <ol class="check-steps" aria-label="Порядок проверки файла">
+      <li><div><b>Скачать только с домена оператора.</b> Ссылка из письма, из чата, с файлообменника или с «зеркала» без публикации отпечатка — повод остановиться.</div></li>
+      <li><div><b>Сверить SHA-256 отпечаток сертификата.</b> Он должен совпасть с тем, что опубликован на странице загрузки, байт в байт. Несовпадение по одному символу означает другой ключ.</div></li>
+      <li><div><b>Проверить имя пакета и версию.</b> Разные имена пакета при одном названии приложения — две разные программы.</div></li>
+      <li><div><b>Прочитать разрешения.</b> Доступ к камере нужен для KYC-селфи, к уведомлениям — для push. Доступ к SMS, к службе специальных возможностей (Accessibility) и к наложению поверх других окон приложению с игрой ни к чему.</div></li>
+      <li><div><b>Оставить включённым Play Protect.</b> Он сканирует и сборки, установленные вне магазина, и блокирует известные троянские подписи.</div></li>
+    </ol>
+    <div class="text">
+      <p>Разрешения заслуживают отдельного абзаца, потому что именно через них работают банковские трояны, замаскированные под игровые сборки. Служба специальных возможностей позволяет читать экран и нажимать кнопки за пользователя — в том числе в приложении банка. Разрешение на чтение SMS отдаёт одноразовые коды подтверждения. Наложение поверх окон рисует поддельную форму ввода над настоящей. Приложение для слотов и лайв-столов обходится камерой, уведомлениями, сетью и, по желанию, геолокацией для проверки региона.</p>
+      <p>С Android 14 система не ставит сборки, собранные под SDK ниже 23 (Android 6), так что старые APK с «архивных» страниц отпадают технически. Ещё одно условие, которое встречается в правилах: оператор снимает с себя ответственность за сборки, скачанные не с его домена. Это означает, что при краже средств через подменённый файл спор с поддержкой проиграет игрок, а не тот, кто разместил фальшивку.</p>
+    </div>
+    <ul class="flag-list" aria-label="Красные флаги и допустимые условия">
+      <li class="stop"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg><span>Отпечаток сертификата на странице загрузки не опубликован или «уточняйте в поддержке».</span></li>
+      <li class="stop"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg><span>Файл приходит из Telegram-чата, с файлообменника или по ссылке с сокращателем.</span></li>
+      <li class="stop"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg><span>При установке запрашивается доступ к SMS, Accessibility или наложению поверх окон.</span></li>
+      <li class="fine"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg><span>Отпечаток, имя пакета и номер версии опубликованы, обновления идут из самого приложения с той же подписью.</span></li>
+    </ul>
+    <details class="qa" id="q-sign">
+      <summary>Как понять, что APK не подменили?</summary>
+      <div class="qa-body"><p>Сверить SHA-256 отпечаток сертификата подписи с тем, что опубликован на сайте оператора, и проверить имя пакета. Отпечаток показывают apksigner verify --print-certs на компьютере или приложения-анализаторы на телефоне. Файл из мессенджера, с файлообменника или с «зеркала» без отпечатка ставить нельзя.</p></div>
+    </details>
+  </div>
+</section>
+
+<section class="clause" id="ios">
+  <div class="column">
+    <div class="clause-head"><h2>iPhone и Safari: что умеет ярлык на экран и чего он не умеет</h2></div>
+    <p class="verdict"><strong>На iPhone игра идёт только через Safari или ярлык на экран: нативных сборок для российского аккаунта в App Store нет, а сторонние браузеры за пределами ЕС используют тот же движок WebKit.</strong> Ярлык даёт полноэкранный режим, отдельное хранилище и, начиная с iOS 16.4, push-уведомления.</p>
+    <div class="text">
+      <p>Условие «iPhone — через Safari» в правилах казино выглядит ограничением, но по факту мало что отнимает. Слоты на HTML5 и лайв-столы на WebRTC движок WebKit воспроизводит так же, как Chrome на Android; разница в деталях: автовоспроизведение видео со звуком требует касания, а Picture-in-Picture для лайв-стола доступен только если оператор включил его в плеере. Вертикальный режим слотов, который провайдеры выпускают с 2019–2020 годов, работает без установки.</p>
+      <p>Ярлык на экран (Add to Home Screen) меняет три вещи. Во-первых, сайт открывается без адресной строки, с иконкой из Web App Manifest. Во-вторых, он получает собственное хранилище: Intelligent Tracking Prevention в обычной вкладке стирает данные сайта после семи дней без визитов; у приложения с ярлыка эти данные держатся дольше, и сессия с настройками не пропадает. В-третьих, с iOS 16.4 именно для веб-приложений с ярлыка Apple включила Web Push: уведомления о зачислении выплаты или о старте стола приходят, как от нативной программы, после явного согласия в настройках.</p>
+      <p>Чего ярлык не умеет: фоновой работы. Выйти из игры и держать стол открытым за кадром нельзя — WebKit приостанавливает страницу, и при возврате через несколько минут сессия стола перезапускается, а ставка в текущем раунде остаётся сыгранной по правилам провайдера. Это условие стоит прочитать в разделе «Разрыв соединения» правил лайв-игр: обычно ставка принимается, если она подтверждена до закрытия приёма, и раунд доигрывается без участия игрока.</p>
+      <p>Вопрос биометрии на iPhone решается через passkey: вход по Face ID возможен в Safari, если оператор включил WebAuthn. Вход через сохранённый пароль в Связке ключей тоже подтверждается Face ID, но это защита пароля, а не отдельного фактора. Разделы Face ID ниже разбирают, в чём различие и почему вывод средств всё равно подтверждают кодом.</p>
+      <p>Регистрация в App Store для таких приложений требует лицензии на каждую страну распространения; поэтому если в правилах оператора есть ссылка «скачать для iOS», она ведёт либо на инструкцию по ярлыку, либо на корпоративный профиль конфигурации. Профиль конфигурации с установкой приложения вне магазина — условие, которое принимать не стоит: такие профили получают контроль над настройками устройства, а Apple отзывает корпоративные сертификаты, после чего приложение перестаёт открываться.</p>
+    </div>
+  </div>
+</section>
+
+<section class="clause" id="sbp">
+  <div class="column">
+    <div class="clause-head"><h2>Касса мобильного казино по СБП: QR, ссылка в банк и имя получателя</h2></div>
+    <p class="verdict"><strong>С телефона депозит по СБП проходит по ссылке, а не по QR: касса отдаёт адрес вида <code>qr.nspk.ru</code>, телефон предлагает выбрать банк, и платёж подтверждается в банковском приложении.</strong> Перевод по СБП безотзывный — отменить его после подтверждения не получится, чарджбэка у этого рельса нет.</p>
+    <div class="text">
+      <p>Система быстрых платежей работает на инфраструктуре НСПК под надзором Банка России; оплата покупок в ней строится на QR-коде, внутри которого зашита ссылка на домен <code>qr.nspk.ru</code>. На компьютере игрок сканирует QR камерой телефона, а на самом телефоне сканировать экран нечем — поэтому мобильная касса обязана давать кнопку «Открыть в приложении банка» или прямую ссылку. По ней система показывает список установленных банковских приложений, выбранный банк открывает форму с заполненной суммой и получателем. Если касса показывает только QR, картинку можно сохранить и открыть в банке через «сканировать из галереи» — это обходной путь, который работает в большинстве банковских приложений.</p>
+      <p>Главный пункт условий — кто указан получателем. При оплате через ТСП (торгово-сервисное предприятие) в форме банка стоит название юридического лица и назначение платежа; при переводе «по номеру телефона» получателем выступает физическое лицо, и банк учитывает такой платёж как перевод между людьми. Второй вариант у операторов без российской лицензии встречается часто, и у него два следствия. Деньги уходят безвозвратно, а в банковской истории появляется перевод частному лицу, который при проверке по 115-ФЗ банк вправе запросить объяснить. Лимит переводов по СБП между людьми без комиссии — 100 000 ₽ в месяц, сверх него банк берёт комиссию; лимит на одну операцию устанавливает банк отправителя.</p>
+      <p>Вывод по СБП идёт в обратную сторону: игрок указывает номер телефона и банк, оператор отправляет перевод. Здесь условие правил — совпадение имени получателя с данными KYC: если счёт верифицирован на одно имя, а номер телефона привязан к карте другого человека, выплату остановят и попросят документы. Второе условие — минимальная сумма и число выводов в сутки; их пишут в разделе «Лимиты», и в мобильной версии они те же, что на компьютере.</p>
+      <p>Что касса по СБП в мобильной версии не делает: не сохраняет реквизиты банка на стороне оператора, не требует вводить номер карты и не передаёт оператору ничего, кроме факта оплаты и номера операции. Это выгодно отличает рельс от карты, где номер и срок действия уходят в платёжный шлюз. При этом сверка идёт по идентификатору операции в НСПК, и если платёж «завис», поддержка просит номер операции из банковского приложения — его стоит сохранять скриншотом.</p>
+    </div>
+    <details class="qa" id="q-sbp">
+      <summary>Можно ли внести депозит по СБП прямо с телефона, если QR показан на том же экране?</summary>
+      <div class="qa-body"><p>Да, если касса даёт ссылку вида qr.nspk.ru или кнопку «Открыть в приложении банка»: по ней телефон сам предложит список банков. Если показан только QR, его можно сохранить скриншотом и открыть в банковском приложении через «сканировать из галереи». Перевод по СБП безотзывный, поэтому имя получателя сверяют до подтверждения.</p></div>
+    </details>
+  </div>
+</section>
+
+<section class="clause" id="traffic">
+  <div class="column">
+    <div class="clause-head"><h2>Трафик лайв-стола: гигабайты в час по битрейту и задержка стрима</h2></div>
+    <p class="verdict"><strong>Лайв-стол в 720p расходует около 1,1 ГБ за час, в 1080p — около 2,2 ГБ; слот на HTML5 после загрузки укладывается в 0,09 ГБ.</strong> На безлимитном Wi-Fi это неважно, на пакете LTE в 20–30 ГБ вечер за рулеткой в Full HD заметен в счёте.</p>
+    <figure class="chart" id="fig-traffic">
+      <svg viewBox="0 0 640 300" role="img" aria-labelledby="t-traffic d-traffic">
+        <title id="t-traffic">Расход трафика за час игры по типу контента и качеству видео</title>
+        <desc id="d-traffic">Горизонтальные столбцы: слот HTML5 0,09 ГБ, лайв 480p 0,66 ГБ, лайв 720p 1,10 ГБ, лайв 1080p 2,20 ГБ, два стола 720p 2,20 ГБ.</desc>
+        <g class="axis">
+          <line class="grid" x1="200" y1="20" x2="200" y2="250"/>
+          <line class="grid" x1="300" y1="20" x2="300" y2="250"/>
+          <line class="grid" x1="400" y1="20" x2="400" y2="250"/>
+          <line class="grid" x1="500" y1="20" x2="500" y2="250"/>
+          <line class="grid" x1="600" y1="20" x2="600" y2="250"/>
+          <text x="200" y="270" text-anchor="middle">0,5 ГБ</text>
+          <text x="300" y="270" text-anchor="middle">1,0</text>
+          <text x="400" y="270" text-anchor="middle">1,5</text>
+          <text x="500" y="270" text-anchor="middle">2,0</text>
+          <text x="600" y="270" text-anchor="middle">2,5 ГБ/ч</text>
+        </g>
+        <line class="base" x1="100" y1="20" x2="100" y2="250"/>
+        <g>
+          <text class="lbl" x="92" y="48" text-anchor="end">Слот HTML5</text>
+          <rect x="100" y="34" width="18" height="22" rx="2" fill="var(--bar-c)"/>
+          <text class="val" x="126" y="50">0,09</text>
+        </g>
+        <g>
+          <text class="lbl" x="92" y="94" text-anchor="end">Лайв 480p</text>
+          <rect x="100" y="80" width="132" height="22" rx="2" fill="var(--bar-b)"/>
+          <text class="val" x="240" y="96">0,66</text>
+        </g>
+        <g>
+          <text class="lbl" x="92" y="140" text-anchor="end">Лайв 720p</text>
+          <rect x="100" y="126" width="220" height="22" rx="2" fill="var(--bar-a)"/>
+          <text class="val" x="328" y="142">1,10</text>
+        </g>
+        <g>
+          <text class="lbl" x="92" y="186" text-anchor="end">Лайв 1080p</text>
+          <rect x="100" y="172" width="440" height="22" rx="2" fill="var(--bar-d)"/>
+          <text class="val" x="548" y="188">2,20</text>
+        </g>
+        <g>
+          <text class="lbl" x="92" y="232" text-anchor="end">Два стола 720p</text>
+          <rect x="100" y="218" width="440" height="22" rx="2" fill="var(--bar-e)"/>
+          <text class="val" x="548" y="234">2,20</text>
+        </g>
+      </svg>
+      <figcaption>Расчёт по формуле: ГБ/ч = битрейт (Мбит/с) × 3600 / 8 / 1024. Битрейты взяты типовые для адаптивных профилей видеостримов; у конкретного провайдера столов они отличаются в пределах ±30 %. Слот — средний поток после первой загрузки ассетов (20–60 МБ).</figcaption>
+      <div class="pane">
+        <table>
+          <caption>Те же числа: битрейт и расход за час</caption>
+          <thead><tr><th scope="col">Контент</th><th scope="col">Битрейт, Мбит/с</th><th scope="col">Расход, ГБ/ч</th><th scope="col">Пакет 25 ГБ хватит на</th></tr></thead>
+          <tbody class="tnum">
+            <tr><th scope="row">Слот HTML5</th><td>0,2</td><td>0,09</td><td>≈ 280 ч</td></tr>
+            <tr><th scope="row">Лайв 480p</th><td>1,5</td><td>0,66</td><td>≈ 38 ч</td></tr>
+            <tr><th scope="row">Лайв 720p</th><td>2,5</td><td>1,10</td><td>≈ 23 ч</td></tr>
+            <tr><th scope="row">Лайв 1080p</th><td>5,0</td><td>2,20</td><td>≈ 11 ч</td></tr>
+            <tr><th scope="row">Два стола 720p</th><td>5,0</td><td>2,20</td><td>≈ 11 ч</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </figure>
+    <div class="text">
+      <p>Лайв-стол в мобильной версии казино — это видеопоток с дилером, который студия отдаёт через WebRTC или через HLS с адаптивным битрейтом. Плеер выбирает качество сам по ширине канала: на слабом LTE он опускается до 480p, на Wi-Fi поднимается до 1080p, и расход трафика меняется вместе с ним. В настройках плеера у большинства студий есть ручной выбор качества и режим «только аудио и данные», где видео дилера выключено, а результаты раундов приходят текстом — это способ играть в дороге, не выходя за пакет.</p>
+      <p>Вторая величина, которая зависит от протокола, — задержка между событием в студии и картинкой на экране. У WebRTC она укладывается в доли секунды, у Low-Latency HLS — в 2–5 секунд, у классического HLS доходит до 10–30 секунд. Для игрока это условие приёма ставок: таймер «ставки приняты» в интерфейсе синхронизирован с сервером, а не с видео, поэтому при большой задержке шарик на экране уже лежит в лунке, когда таймер ещё открыт. В правилах лайв-игр это оформлено пунктом о том, что результат определяется по серверу студии, а не по изображению.</p>
+    </div>
+    <figure class="chart" id="fig-latency">
+      <svg viewBox="0 0 640 220" role="img" aria-labelledby="t-lat d-lat">
+        <title id="t-lat">Задержка видеопотока лайв-стола по протоколу, секунды</title>
+        <desc id="d-lat">Диапазоны: WebRTC от 0,3 до 1,5 секунды, Low-Latency HLS от 2 до 5 секунд, классический HLS от 10 до 30 секунд.</desc>
+        <g class="axis">
+          <line class="grid" x1="100" y1="20" x2="100" y2="170"/>
+          <line class="grid" x1="183" y1="20" x2="183" y2="170"/>
+          <line class="grid" x1="267" y1="20" x2="267" y2="170"/>
+          <line class="grid" x1="350" y1="20" x2="350" y2="170"/>
+          <line class="grid" x1="433" y1="20" x2="433" y2="170"/>
+          <line class="grid" x1="517" y1="20" x2="517" y2="170"/>
+          <line class="grid" x1="600" y1="20" x2="600" y2="170"/>
+          <text x="100" y="192" text-anchor="middle">0 с</text>
+          <text x="183" y="192" text-anchor="middle">5</text>
+          <text x="267" y="192" text-anchor="middle">10</text>
+          <text x="350" y="192" text-anchor="middle">15</text>
+          <text x="433" y="192" text-anchor="middle">20</text>
+          <text x="517" y="192" text-anchor="middle">25</text>
+          <text x="600" y="192" text-anchor="middle">30 с</text>
+        </g>
+        <g>
+          <text class="lbl" x="92" y="52" text-anchor="end">WebRTC</text>
+          <rect x="105" y="40" width="20" height="18" rx="9" fill="var(--bar-c)"/>
+          <text class="val" x="134" y="54">0,3–1,5 с</text>
+        </g>
+        <g>
+          <text class="lbl" x="92" y="100" text-anchor="end">LL-HLS</text>
+          <rect x="133" y="88" width="50" height="18" rx="9" fill="var(--bar-b)"/>
+          <text class="val" x="192" y="102">2–5 с</text>
+        </g>
+        <g>
+          <text class="lbl" x="92" y="148" text-anchor="end">HLS</text>
+          <rect x="267" y="136" width="333" height="18" rx="9" fill="var(--bar-d)"/>
+          <text class="val" x="267" y="128">10–30 с</text>
+        </g>
+      </svg>
+      <figcaption>Линейная шкала 0–30 с. Диапазоны соответствуют спецификациям протоколов и типовым настройкам сегментов (HLS — сегменты 6–10 с, буфер из трёх сегментов; LL-HLS — части по 0,2–1 с). У конкретной студии значения зависят от настроек плеера и CDN.</figcaption>
+      <div class="pane">
+        <table>
+          <caption>Те же диапазоны и что они означают для приёма ставок</caption>
+          <thead><tr><th scope="col">Протокол</th><th scope="col">Задержка, с</th><th scope="col">Следствие</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">WebRTC</th><td class="tnum">0,3–1,5</td><td>Картинка и таймер почти совпадают; обычный режим студий для телефона</td></tr>
+            <tr><th scope="row">LL-HLS</th><td class="tnum">2–5</td><td>Таймер закрывается раньше, чем видно результат; ставки принимаются по серверу</td></tr>
+            <tr><th scope="row">HLS</th><td class="tnum">10–30</td><td>Запасной режим при слабой сети; ориентироваться на видео нельзя</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </figure>
+    <details class="qa" id="q-traffic">
+      <summary>Сколько трафика съедает лайв-стол за час?</summary>
+      <div class="qa-body"><p>При битрейте 2,5 Мбит/с (720p) выходит около 1,1 ГБ в час, при 5 Мбит/с (1080p) — около 2,2 ГБ, при 1,5 Мбит/с (480p) — около 0,66 ГБ. Слот на HTML5 после загрузки тратит порядка 0,09 ГБ в час. Два стола в режиме multi-view удваивают расход.</p></div>
+    </details>
+  </div>
+</section>
+
+<section class="clause" id="faceid">
+  <div class="column">
+    <div class="clause-head"><h2>Face ID, Touch ID и вход без пароля: что защищает счёт, а что только ускоряет вход</h2></div>
+    <p class="verdict"><strong>Биометрия в приложении казино подтверждает, что телефон в руках владельца, и заменяет ввод пароля; она не защищает открытую сессию и не заменяет подтверждение вывода.</strong> Слепок лица или отпечаток не покидает телефон — оператор получает только криптографическую подпись или факт успешной проверки.</p>
+    <div class="text">
+      <p>Технически вход по Face ID реализуется двумя путями. В браузере и PWA — через WebAuthn: при регистрации телефон создаёт пару ключей, закрытый ключ хранится в Secure Enclave на iPhone или в TEE на Android, а сайт получает открытый ключ. При входе сайт присылает случайную строку, телефон подписывает её после биометрии, и сервер проверяет подпись. Это passkey. В APK — через системный BiometricPrompt: приложение просит систему подтвердить личность и в ответ получает «да» или «нет», а дальше само решает, что с этим делать. Второй путь слабее по устройству: если сборка подменена, «да» может быть нарисовано ею самой.</p>
+      <p>Что это даёт игроку. Пароль перестаёт быть целью фишинга: на поддельном домене passkey не сработает, потому что ключ привязан к домену оператора. Вход на чужом устройстве без пароля невозможен. Но если телефон разблокирован и сессия открыта, биометрия уже пройдена — доступ к кассе есть у того, кто держит телефон. Поэтому в условиях большинства операторов вывод подтверждается отдельно: кодом из приложения-аутентификатора (TOTP), кодом в письме или повторной биометрией с ограничением по сумме.</p>
+      <p>Пункты правил, которые стоит найти перед включением биометрии. Первый — «запомнить устройство»: оператор ставит долгоживущую cookie или токен, и повторная проверка не требуется 30–90 дней; при утере телефона этот токен нужно отозвать через «выйти со всех устройств». Второй — лимит без подтверждения: некоторые кассы отдают до определённой суммы в сутки без второго фактора, и эта сумма указана в разделе «Безопасность аккаунта». Третий — восстановление: если passkey единственный способ входа, а телефон утерян, восстановление идёт через KYC-документы и занимает дни; резервный TOTP или пароль сокращают срок.</p>
+      <p>Отдельно о приватности. Биометрические данные по 152-ФЗ относятся к особой категории персональных данных, и оператор, у которого они оказались бы, обязан получать письменное согласие и регистрировать базу. WebAuthn и BiometricPrompt спроектированы так, чтобы этого не происходило: сервер хранит открытый ключ и идентификатор, а не биометрию. Если в правилах написано, что оператор «хранит биометрический профиль», это противоречит устройству технологии и означает либо неточность формулировки, либо что речь идёт о KYC-селфи, которое хранится и сверяется с документом.</p>
+    </div>
+    <details class="qa" id="q-face">
+      <summary>Защищает ли Face ID счёт, если телефон украли разблокированным?</summary>
+      <div class="qa-body"><p>Не защищает: биометрия подтверждает только вход, а открытая сессия уже внутри. Поэтому в правилах кассы отдельно просят код или подтверждение на вывод, а в настройках аккаунта стоит включить TOTP-коды и выход из всех устройств. Сам слепок лица оператору не передаётся — он остаётся в Secure Enclave или TEE телефона.</p></div>
+    </details>
+  </div>
+</section>
+
+<section class="clause" id="rules">
+  <div class="column">
+    <div class="clause-head"><h2>Пункты правил, где упомянут телефон: одно устройство, геолокация, бонус за установку</h2></div>
+    <p class="verdict"><strong>В правилах казино телефон встречается в пяти местах: отпечаток устройства, проверка региона, бонус за установку приложения, разрыв соединения и ответственность за сторонние сборки.</strong> Каждый пункт имеет последствие для аккаунта, и ни один из них не прочитать на экране приветствия.</p>
+    <div class="text">
+      <h3>Отпечаток устройства и мультиаккаунтинг</h3>
+      <p>Оператор собирает идентификаторы телефона — модель, версию системы, параметры экрана, идентификатор рекламы и WebView — и связывает их с аккаунтом. Пункт о мультиаккаунтинге запрещает второй аккаунт на том же устройстве и в той же семье; при обнаружении оба аккаунта блокируют, выигрыши по бонусам аннулируют, депозиты возвращают после проверки. Переустановка APK отпечаток не меняет, смена смартфона — меняет, и повторный вход с нового устройства может вызвать запрос документов.</p>
+      <h3>Геолокация и регион</h3>
+      <p>Проверка региона идёт по IP-адресу, а в APK ещё и по GPS, если разрешение дано. Условие «игра недоступна из юрисдикций из списка» срабатывает при поездке: если в правилах страна назначения запрещена, аккаунт переводят в режим «только вывод». Отказ дать доступ к геолокации в приложении обычно не блокирует вход, но снимает возможность играть в лайв-столы у студий, которые требуют подтверждение региона по требованию своей лицензии.</p>
+      <h3>Бонус за установку приложения</h3>
+      <p>«Мобильный бонус» или фриспины за установку — тот же бонус с вейджером, что и на компьютере: x30–x40 к сумме бонуса, максимальная ставка во время отыгрыша около 500 ₽ или 5 € по курсу, срок 7–14 дней, часто ограничение по играм. Отличие в условии активации: бонус начисляется при первом входе из приложения, и отпечаток устройства нужен именно для того, чтобы бонус не получили дважды. При удалении приложения до окончания отыгрыша бонус обычно не сгорает, но в некоторых правилах написано обратное — это стоит проверить до установки.</p>
+      <h3>Разрыв соединения</h3>
+      <p>На смартфоне обрывы случаются чаще: переключение между Wi-Fi и LTE, входящий звонок, блокировка экрана. Правила слотов фиксируют, что незавершённый раунд доигрывается сервером и результат виден в истории; правила лайв-столов — что подтверждённая ставка остаётся в игре, а неподтверждённая отменяется. Спор возможен только по истории раундов, которую оператор обязан предоставить по запросу; её скриншот после обрыва — единственное доказательство в переписке с поддержкой.</p>
+      <h3>Ответственность за сторонние сборки</h3>
+      <p>Последний пункт мы уже встречали в главе про подпись: оператор отвечает за сборки, скачанные с его домена, и не отвечает за остальные. Это условие даёт игроку простой критерий — ссылка на файл вне домена оператора лишает игрока защиты правил. С учётом того, что три формата из четырёх установки не требуют, самый короткий способ соблюсти все пять пунктов — ярлык на экран и касса по СБП в браузере.</p>
+    </div>
+  </div>
+</section>
+
+<section class="clause" id="faq">
+  <div class="column">
+    <div class="clause-head"><h2>Вопросы, которые остаются после чтения правил</h2></div>
+    <p class="mid">Ответы на шесть вопросов из этого разбора собраны в его главах: установка, магазины, подпись файла, депозит по СБП с телефона, трафик стола и Face ID. Ниже — где искать каждый.</p>
+    <ul class="text">
+      <li><a href="#q-install">Нужно ли скачивать приложение</a> — глава I.</li>
+      <li><a href="#q-stores">Почему приложения нет в магазинах</a> — глава I.</li>
+      <li><a href="#q-sign">Как понять, что APK не подменили</a> — глава II.</li>
+      <li><a href="#q-sbp">Депозит по СБП, когда QR на том же экране</a> — глава IV.</li>
+      <li><a href="#q-traffic">Сколько трафика уходит на лайв-стол</a> — глава V.</li>
+      <li><a href="#q-face">Защищает ли Face ID при краже телефона</a> — глава VI.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="clause" id="channel">
+  <div class="column">
+    <div class="clause-head"><h2>Обновления разбора и канал</h2></div>
+    <div class="text">
+      <p>Условия меняются: Apple расширяет возможности веб-приложений с каждой версией iOS, Google ужесточает установку вне магазина, Банк России корректирует лимиты СБП, студии переводят стримы на новые протоколы. Мы правим этот разбор по мере таких изменений и отмечаем дату в начале страницы. Короткие заметки о том, что поменялось в правилах мобильных казино и платформ, выходят в Telegram-канале.</p>
+    </div>
+    <div class="channel">
+      <p>Канал с новостями об условиях игры с телефона, изменениях в кассах и обновлениях платформ.</p>
+      <a class="go" href="https://t.me/top_casino_2027" rel="noopener" target="_blank">Открыть канал в Telegram</a>
+    </div>
+  </div>
+</section>
+
+<section class="clause" id="care">
+  <div class="column">
+    <div class="care">
+      <b aria-hidden="true">18+</b>
+      <p>Игра на деньги доступна совершеннолетним и может вызывать зависимость. Смартфон делает доступ к столу постоянным, поэтому лимиты депозита, таймер сессии и самоисключение стоит настроить в кабинете до первого депозита. Если игра перестала быть развлечением, помощь дают бесплатные линии психологической поддержки.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="colophon">
+  <div class="broad">
+    <div>
+      <p><strong>Вертикальный экран</strong> — разбор условий игры с телефона.</p>
+      <p>Редакция «Вертикальный экран», 2026. Материал обновляется по мере изменений в правилах платформ и операторов.</p>
+    </div>
+    <div>
+      <p>На странице нет партнёрских ссылок, промокодов и названий операторов. Все данные о платформах, протоколах и платёжных рельсах — общие и проверяемые в документации Apple, Google, НСПК и спецификациях WebRTC/HLS.</p>
+    </div>
+    <div>
+      <p>Числа трафика и задержек рассчитаны по формулам, приведённым в подписях к графикам; у конкретного оператора и студии они отличаются.</p>
+      <p>Единственная внешняя ссылка — Telegram-канал в разделе «Обновления разбора и канал».</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement,btn=document.querySelector('[data-mode-toggle]');
+  try{var saved=localStorage.getItem('ve-theme');if(saved==='dark'||saved==='light')root.setAttribute('data-theme',saved);}catch(e){}
+  if(btn){btn.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme');
+    var sys=window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+    var now=(cur||sys)==='dark'?'light':'dark';
+    root.setAttribute('data-theme',now);
+    try{localStorage.setItem('ve-theme',now);}catch(e){}
+  });}
+  var links=[].slice.call(document.querySelectorAll('.rail a'));
+  if('IntersectionObserver' in window&&links.length){
+    var map={};links.forEach(function(a){var id=a.getAttribute('href').slice(1);var el=document.getElementById(id);if(el)map[id]=a;});
+    var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){links.forEach(function(a){a.removeAttribute('aria-current');});var a=map[en.target.id];if(a)a.setAttribute('aria-current','true');}});},{rootMargin:'-40% 0px -55% 0px'});
+    Object.keys(map).forEach(function(id){io.observe(document.getElementById(id));});
+  }
+})();
+</script>
+</body>
+</html>
